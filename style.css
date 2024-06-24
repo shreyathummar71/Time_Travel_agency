@@ -1,0 +1,137 @@
+/* START comman css */ 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+  a{
+    color: inherit;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 16px;
+}
+ul {
+    list-style: none;
+}
+/* END comman css */ 
+
+/* START Header css */ 
+.logo img {
+    width: 40%;
+}
+a:hover {
+    color: #f1e3dd;
+}
+header nav ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+header nav {
+    float: right;
+    padding: 3rem;
+}
+figure.logo {
+    float: left;
+}
+header {
+    background-color: #b7d7e8;
+    float: left;
+    width: 100%;
+}
+/* END Header css */ 
+
+/* START Main css */ 
+main {
+    background-color: #f1e3dd;
+    float: left;
+    width: 100%;
+}
+   
+.gallery {
+    margin: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .gallery-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+  }
+  article{
+    border-radius: 20px;
+    padding: 45px 40px 40px;
+    background-color: #b7d7e8;
+}
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+section.services_main {
+    padding: 0 20px;
+    margin-bottom: 2rem;
+}
+section.services_main h2 ,h1{
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+section.services_main h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+h1 {
+    padding: 0 2rem;
+}
+section {
+    padding: 1rem 0;
+}
+  @media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+    }
+    .services {
+        display: block;
+    }
+    article {
+        margin-bottom: 2rem;
+        padding: 25px 20px 20px;
+    }
+    header nav ul {
+        display: inline-flex;
+        justify-content: center;
+    }
+    header nav {
+        float: left;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+    figure.logo {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* END Main css */ 
+
+/* START Footer css */ 
+footer {
+    background-color: #b7d7e8;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+/* END Footer css */ 
